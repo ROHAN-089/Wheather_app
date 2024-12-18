@@ -1,0 +1,113 @@
+/* Overall app container */
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/25501.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass effect container */
+.weather {
+  height: 420px;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Input box styling */
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.svg{
+  fill: #ffffff;
+}
+
+/* Input field */
+.input {
+  flex: 1;
+  height: 45px;
+  padding: 0 15px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Search icon styling */
+.search-icon {
+  height: 40px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #555;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.search-icon:hover {
+  background-color: rgba(0, 225, 255, 0.8);
+}
+
+/* Weather details */
+.weather-details h1 {
+  font-size: 48px;
+  margin: 20px 0 5px;
+}
+
+.weather-details p {
+  font-size: 18px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Additional info section */
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  gap: 80px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.icon{
+  width: 120px;
+  height: 150px;
+}
+
+.additional-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-info span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
